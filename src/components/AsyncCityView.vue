@@ -13,7 +13,7 @@
     <!-- Weather Overview -->
     <div class="flex flex-col items-center text-white py-12">
       <h1 class="text-4xl mb-2">{{ route.params.city }}</h1>
-      <p class="text-sm mb-12">
+      <!-- <p class="text-sm mb-12">
         {{
           new Date(weatherData.currentTime).toLocaleDateString(
             "en-us",
@@ -32,11 +32,11 @@
             }
           )
         }}
-      </p>
+      </p> -->
       <p class="text-8xl mb-8">
-        {{ Math.round(weatherData.current.temp) }}&deg;
+        {{ Math.round(weatherData.main.temp) }}&deg;
       </p>
-      <p>
+      <!-- <p>
         Feels like
         {{ Math.round(weatherData.current.feels_like) }} &deg;
       </p>
@@ -49,13 +49,13 @@
           `http://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}@2x.png`
         "
         alt=""
-      />
+      /> -->
     </div>
 
-    <hr class="border-white border-opacity-10 border w-full" />
+    <!-- <hr class="border-white border-opacity-10 border w-full" /> -->
 
     <!-- Hourly Weather -->
-    <div class="max-w-screen-md w-full py-12">
+    <!-- <div class="max-w-screen-md w-full py-12">
       <div class="mx-8 text-white">
         <h2 class="mb-4">Hourly Weather</h2>
         <div class="flex gap-10 overflow-x-scroll">
@@ -86,12 +86,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <hr class="border-white border-opacity-10 border w-full" />
+    <!-- <hr class="border-white border-opacity-10 border w-full" /> -->
 
     <!-- Weekly Weather -->
-    <div class="max-w-screen-md w-full py-12">
+    <!-- <div class="max-w-screen-md w-full py-12">
       <div class="mx-8 text-white">
         <h2 class="mb-4">7 Day Forecast</h2>
         <div
@@ -122,7 +122,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
